@@ -17,6 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from D2L.views import Calendar, AddClass
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('calendar/', Calendar, name="Calendar"),
+    path('add/', AddClass, name="Add Class"),
 ]

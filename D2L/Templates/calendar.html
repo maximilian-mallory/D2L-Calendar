@@ -1,0 +1,11 @@
+<html>      
+        <h1>
+            {{ message }}
+        </h1>
+        <h2>Assignments:</h2>
+        <ul>
+            {% for assignment in assignments %}
+                <li>{{ assignment.course }} - {{ assignment.name }} - {{ assignment.date }}</li>
+            {% endfor %}
+        </ul>
+</html>
